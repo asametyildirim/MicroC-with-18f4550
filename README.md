@@ -44,3 +44,25 @@ while(1){
 ![](https://i.imgur.com/Tz72L9q.gif)
 
 
+## What Is The Timer?
+
+They work independently of the program written for the microcontroller. There is a register named T0CON to set Timer0.
+
+- Bit 7 -> Timer on/off  (1=onn 0=off)
+- Bit 6 -> Select the 16bit or 8bit (1=8bit 0=16bit)
+- Bit 5 -> Choosing a signal source (1=external 0=internal)
+- Bit 4 -> Signal source edge selection (1=increase from 1 to 0 ,  0 = increase from 0 to 1)
+- Bit 3 -> Does it depend on PSA? (1=no 0=yes)
+- Bit2-0 -> Select the prescaler value 
+
+
+- - 000 -> 1:2
+- - 001 -> 1:4
+- - 010 -> 1:8
+- - 011 -> 1:16
+- - 100 -> 1:32
+- - 101 -> 1:64
+- - 110 -> 1:128
+- - 111 -> 1:256
+
+
